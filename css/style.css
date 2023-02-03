@@ -1,0 +1,48 @@
+body{
+    background-color: #D4F4FE;
+    font-family: 'Inter', sans-serif;
+}
+.text-primary{
+    color: #003B8A !important;
+}
+.bg-primary{
+    --bs-primary-rgb: #003B8A;
+}
+.bg-primary{
+    background-color: #003B8A !important;
+}
+.Weekly-roster{
+    max-width: 900px;
+}
+.question-item_count{
+    width: 28px;
+    height: 28px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
+
+.form-check-input:checked {
+    background-color: #003b8a;
+    border-color: #003b8a;
+}
+.form-check-input{
+    width: 17px;
+    height: 17px;
+}
+.btn-primary{
+    --bs-btn-bg: #003b8a;
+    --bs-btn-border-color: #003b8a;
+
+    --bs-btn-hover-bg: #06316a;
+    --bs-btn-hover-border-color: #06316a;
+
+    --bs-btn-active-bg: #003b8a;
+    --bs-btn-active-border-color: #003b8a
+}
+.object-cover{
+    object-fit: cover;
+}
