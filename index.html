@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <nav x-data="{ showBar: false }" :class="{'bg-primary' : showBar}" class="navbar navbar-expand-lg navbar-dark position-fixed top-0 w-100" @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
         <div class="container">
           <a class="navbar-brand" href="#">
             <h5 class="text-center fw-semibold mb-0"> <i class="bi bi-calendar3 me-2"></i> Weekly Roster</h5>
@@ -33,10 +33,20 @@
           </div>
         </div>
       </nav>
-    <main class="p-5 min-vh-100 position-relative">
-        <img src="./images/blur-bg.png" class="position-absolute w-100 h-100 start-0 top-0 object-cover" alt="">
-        <div class="container position-relative">
-            <h5 class="text-center mb-4 fw-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+      <header class="position-relative section-padder bg-primary">
+        <img src="./images/header-bg.jpg" class="position-absolute w-100 h-100 start-0 top-0 object-cover" alt="">
+        <div class="position-absolute w-100 h-100 start-0 top-0 bg-primary opacity-90"></div>
+        
+        <div class="container text-center position-relative pt-5 ">
+            <p class="mb-2 text-white opacity-75">Weekly Roster</p>
+            <h1 class="fw-bold text-white mb-0">Lorem, ipsum dolor sit amet.</h1>
+        </div>
+      </header>
+    <main class=" min-vh-100 position-relative">
+        <img src="./images/blur-bg.png" class="position-absolute w-100 h-100 start-0 top-0 object-cover opacity-50" alt="">
+        <section class="section-padder">
+          <div class="container position-relative">
+            <h5 class="text-center mb-5 fw-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
             <div class="Weekly-roster mx-auto">
                 <div class="question-item bg-white p-4 rounded-4 shadow-sm mb-4">
                     <p class="fw-semibold text-primary d-flex align-items-center border-bottom pb-4 lh-base mb-4"> 
@@ -44,10 +54,10 @@
                         What does your schedule for the week between [Date on Monday of next week]-[Date on Friday of next week] look like?
                     </p>
                     <div class="table-responsive">
-                        <table class="table fs-14">
+                        <table class="table fs-14 text-center">
                             <thead class="">
                               <tr>
-                                <th scope="col">#</th>
+                                <th class="text-start" scope="col">#</th>
                                 <th scope="col">Working from Office</th>
                                 <th scope="col">Working from Home</th>
                                 <th scope="col">Traveling for business</th>
@@ -56,35 +66,35 @@
                             </thead>
                             <tbody>
                               <tr>
-                                <th scope="row">Mon</th>
+                                <th class="text-start" scope="row">Mon</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-mon"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-mon"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-mon"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-mon"></td>
                               </tr>
                               <tr>
-                                <th scope="row">Tue</th>
+                                <th class="text-start" scope="row">Tue</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-tue"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-tue"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-tue"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-tue"></td>
                               </tr>
                               <tr>
-                                <th scope="row">Wed</th>
+                                <th class="text-start" scope="row">Wed</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-wed"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-wed"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-wed"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-wed"></td>
                               </tr>
                               <tr>
-                                <th scope="row">Thu</th>
+                                <th class="text-start" scope="row">Thu</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-thu"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-thu"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-thu"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-thu"></td>
                               </tr>
                               <tr>
-                                <th scope="row">Fri</th>
+                                <th class="text-start" scope="row">Fri</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-fri"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-fri"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q1-fri"></td>
@@ -103,10 +113,10 @@
                         What does your workload for the next week look like?
                     </p>
                     <div class="table-responsive">
-                        <table class="table fs-14">
+                        <table class="table fs-14 text-center">
                             <thead class="">
                               <tr>
-                                <th scope="col">#</th>
+                                <th class="text-start" scope="col">#</th>
                                 <th scope="col" class="text-danger">Over-utilised</th>
                                 <th scope="col">Appropriately utilized</th>
                                 <th scope="col">Under-utilised</th>
@@ -114,31 +124,31 @@
                             </thead>
                             <tbody>
                               <tr>
-                                <th scope="row">Mon</th>
+                                <th class="text-start" scope="row">Mon</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-mon"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-mon"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-mon"></td>
                               </tr>
                               <tr>
-                                <th scope="row">Tue</th>
+                                <th class="text-start" scope="row">Tue</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-tue"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-tue"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-tue"></td>
                               </tr>
                               <tr>
-                                <th scope="row">Wed</th>
+                                <th class="text-start" scope="row">Wed</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-wed"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-wed"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-wed"></td>
                               </tr>
                               <tr>
-                                <th scope="row">Thu</th>
+                                <th class="text-start" scope="row">Thu</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-thu"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-thu"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-thu"></td>
                               </tr>
                               <tr>
-                                <th scope="row">Fri</th>
+                                <th class="text-start" scope="row">Fri</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-fri"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-fri"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-fri"></td>
@@ -149,14 +159,15 @@
                     
                 </div>
 
-                <div class="text-center">
-                    <button class="btn btn-primary  fw-semibold px-4 py-2">Submit Your Schedule</button>
+                <div class="text-center pt-4">
+                    <button class="btn btn-primary  fw-semibold px-4 py-3 fs-14">Submit Your Schedule</button>
                 </div>
             </div>
         </div>
-
+        </section>
     </main>
-
+    
     <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>

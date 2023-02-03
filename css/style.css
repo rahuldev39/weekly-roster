@@ -1,15 +1,14 @@
 body{
-    background-color: #D4F4FE;
     font-family: 'Inter', sans-serif;
 }
 .text-primary{
-    color: #003B8A !important;
+    color: #003c8c !important;
 }
 .bg-primary{
-    --bs-primary-rgb: #003B8A;
+    --bs-primary-rgb: #003c8c;
 }
 .bg-primary{
-    background-color: #003B8A !important;
+    background-color: #003c8c !important;
 }
 .Weekly-roster{
     max-width: 900px;
@@ -26,23 +25,32 @@ body{
 }
 
 .form-check-input:checked {
-    background-color: #003b8a;
-    border-color: #003b8a;
+    background-color: #003c8c;
+    border-color: #003c8c;
 }
 .form-check-input{
     width: 17px;
     height: 17px;
 }
 .btn-primary{
-    --bs-btn-bg: #003b8a;
-    --bs-btn-border-color: #003b8a;
+    --bs-btn-bg: #003c8c;
+    --bs-btn-border-color: #003c8c;
 
     --bs-btn-hover-bg: #06316a;
     --bs-btn-hover-border-color: #06316a;
 
-    --bs-btn-active-bg: #003b8a;
-    --bs-btn-active-border-color: #003b8a
+    --bs-btn-active-bg: #003c8c;
+    --bs-btn-active-border-color: #003c8c
 }
 .object-cover{
     object-fit: cover;
+}
+.navbar{
+    z-index: 100;
+}
+.opacity-90{
+    opacity: .9;
+}
+.section-padder{
+    padding: 80px 0px;
 }
