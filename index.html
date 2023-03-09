@@ -15,8 +15,11 @@
 <body>
     <nav x-data="{ showBar: false }" :class="{'bg-primary' : showBar}" class="navbar navbar-expand-lg navbar-dark position-fixed top-0 w-100" @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <h5 class="text-center fw-semibold mb-0"> <i class="bi bi-calendar3 me-2"></i> Weekly Roster</h5>
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="border-end border-1 border-light border-opacity-75 pe-3 me-3">
+              <img src="./images/w-cele-logo.png" width="110" alt="">
+            </div>
+            <h6 class="text-center fw-semibold mb-0"> <i class="bi bi-calendar3 me-2"></i> Weekly Roster</h6>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -120,6 +123,7 @@
                                 <th scope="col" class="text-danger">Over-utilised</th>
                                 <th scope="col">Appropriately utilized</th>
                                 <th scope="col">Under-utilised</th>
+                                <th width="270">Which projects are you working on?</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -128,30 +132,45 @@
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-mon"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-mon"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-mon"></td>
+                                <td>
+                                  <input type="text" class="form-control form-control-sm">
+                                </td>
                               </tr>
                               <tr>
                                 <th class="text-start" scope="row">Tue</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-tue"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-tue"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-tue"></td>
+                                <td>
+                                  <input type="text" class="form-control form-control-sm">
+                                </td>
                               </tr>
                               <tr>
                                 <th class="text-start" scope="row">Wed</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-wed"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-wed"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-wed"></td>
+                                <td>
+                                  <input type="text" class="form-control form-control-sm">
+                                </td>
                               </tr>
                               <tr>
                                 <th class="text-start" scope="row">Thu</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-thu"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-thu"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-thu"></td>
+                                <td>
+                                  <input type="text" class="form-control form-control-sm">
+                                </td>
                               </tr>
                               <tr>
                                 <th class="text-start" scope="row">Fri</th>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-fri"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-fri"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-fri"></td>
+                                <td>
+                                  <input type="text" class="form-control form-control-sm">
+                                </td>
                               </tr>
                             </tbody>
                           </table>
