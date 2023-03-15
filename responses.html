@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Roster :: Responses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">     
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav x-data="{ showBar: false }" :class="{'bg-primary' : showBar}" class="navbar navbar-expand-lg navbar-dark position-fixed top-0 w-100" @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="border-end border-1 border-light border-opacity-75 pe-3 me-3">
+              <img src="./images/w-cele-logo.png" width="110" alt="">
+            </div>
+            <h6 class="text-center fw-semibold mb-0"> <i class="bi bi-calendar3 me-2"></i> Weekly Roster</h6>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./responses.html">Responses</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header class="position-relative section-padder bg-primary">
+        <img src="./images/header-bg.jpg" class="position-absolute w-100 h-100 start-0 top-0 object-cover" alt="">
+        <div class="position-absolute w-100 h-100 start-0 top-0 bg-primary opacity-90"></div>
+        
+        <div class="container text-center position-relative pt-5 ">
+            <h1 class="fw-bold text-white mb-0">Responses</h1>
+        </div>
+      </header>
+    <main class=" min-vh-100 position-relative">
+        <img src="./images/blur-bg.png" class="position-absolute w-100 h-100 start-0 top-0 object-cover opacity-50" alt="">
+        <section class="section-padder">
+          <div class="container-xl position-relative">
+            <h5 class="text-center mb-5 fw-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <div class=" mx-auto">
+                <div class="question-item bg-white p-4 rounded-4 shadow-sm mb-4">
+                    
+                    <div class="table-responsive">
+                        <table class="table fs-14">
+                            <thead class="">
+                              <tr>
+                                <th class="text-start" scope="col">Name</th>
+                                <th scope="col">WeekFrom</th>
+                                <th scope="col">WeekTo</th>
+                                <th scope="col">Question</th>
+                                <th scope="col">Mon</th>
+                                <th scope="col">Tue</th>
+                                <th scope="col">Wed</th>
+                                <th scope="col">Thur</th>
+                                <th scope="col">Fri</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="py-3">sagar kute</td>
+                                <td class="py-3">27-02-2023</td>
+                                <td class="py-3">03-03-2023</td>
+                                <td class="py-3">Schedule</td>
+                                <td class="py-3">Office</td>
+                                <td class="py-3">WFH</td>
+                                <td class="py-3">Leave</td>
+                                <td class="py-3">Travel</td>
+                                <td class="py-3">Travel</td>
+                              </tr>
+
+                              <tr>
+                                <td class="py-3">sagar kute</td>
+                                <td class="py-3">27-02-2023</td>
+                                <td class="py-3">03-03-2023</td>
+                                <td class="py-3">Workload</td>
+                                <td class="py-3">OverUtilised</td>
+                                <td class="py-3">AppropriateUtilised</td>
+                                <td class="py-3">Leave</td>
+                                <td class="py-3">OverUtilised</td>
+                                <td class="py-3">OverUtilised</td>
+                              </tr>
+
+                              <tr>
+                                <td class="py-3">sagar kute</td>
+                                <td class="py-3">27-02-2023</td>
+                                <td class="py-3">03-03-2023</td>
+                                <td class="py-3">Schedule</td>
+                                <td class="py-3">Office</td>
+                                <td class="py-3">WFH</td>
+                                <td class="py-3">Leave</td>
+                                <td class="py-3">Travel</td>
+                                <td class="py-3">Travel</td>
+                              </tr>
+
+                              <tr>
+                                <td class="py-3">sagar kute</td>
+                                <td class="py-3">27-02-2023</td>
+                                <td class="py-3">03-03-2023</td>
+                                <td class="py-3">Workload</td>
+                                <td class="py-3">OverUtilised</td>
+                                <td class="py-3">AppropriateUtilised</td>
+                                <td class="py-3">Leave</td>
+                                <td class="py-3">OverUtilised</td>
+                                <td class="py-3">OverUtilised</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+
+                    <nav class="px-0 py-3 border-top border-gray-200 mt-4">
+                      <ul class="pagination fs-14 justify-content-center align-items-center fw-medium mb-0">
+                        <li class="page-item disabled me-auto">
+                          <a class="btn btn-light d-flex align-items-center py-2 px-3 fs-14">
+                              <div class="me-2">
+                                  <img src="./images/icon/arrow-left.svg" width="20" alt="">
+                              </div>
+                              Previous
+                          </a>
+                        </li>
+                        <li class="page-item d-none d-sm-block mx-1"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item d-none d-sm-block mx-1"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item d-none d-sm-block mx-1"><a class="page-link" href="#">3</a></li>
+                        <li class="px-3">...</li>
+                        <li class="page-item d-none d-sm-block mx-1"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item d-none d-sm-block mx-1"><a class="page-link" href="#">9</a></li>
+                        <li class="page-item d-none d-sm-block mx-1"><a class="page-link" href="#">10</a></li>
+                        <li class="page-item ms-auto">
+                          <a class="btn btn-light d-flex align-items-center py-2 px-3 fs-14">
+                              Next
+                              <div class="ms-2">
+                                  <img src="./images/icon/arrow-right.svg" width="20" alt="">
+                              </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+    
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>

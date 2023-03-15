@@ -42,6 +42,24 @@ body{
     --bs-btn-active-bg: #003c8c;
     --bs-btn-active-border-color: #003c8c
 }
+
+.btn-light{
+    --bs-btn-color: #344054;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: #D0D5DD;
+
+    --bs-btn-hover-color: #1D2939;
+    --bs-btn-hover-bg: #F9FAFB;
+    --bs-btn-hover-border-color: #D0D5DD;
+
+    --bs-btn-active-color: #1D2939;
+    --bs-btn-active-bg: #F9FAFB;
+    --bs-btn-active-border-color: #D0D5DD;
+
+    --bs-btn-disabled-color: #344054;
+    --bs-btn-disabled-bg: #FFFFFF;
+    --bs-btn-disabled-border-color: #EAECF0;
+}
 .object-cover{
     object-fit: cover;
 }
@@ -53,4 +71,18 @@ body{
 }
 .section-padder{
     padding: 80px 0px;
+}
+
+.pagination{
+    --bs-pagination-border-width: 0px;
+    --bs-pagination-color: #667085;
+    --bs-pagination-hover-color:#1D2939;
+    --bs-pagination-active-bg:#003c8c;
+    --bs-pagination-hover-bg: #F9FAFB;
+    --bs-pagination-active-color:white;
+    --bs-pagination-padding-x: 12px;
+    --bs-pagination-padding-y: 4px;
+}
+.pagination .page-item .page-link {
+    border-radius: 8px;
 }
