@@ -238,7 +238,7 @@
                       <span class="me-3 flex-shrink-0 d-flex align-items-center justify-content-center bg-primary rounded-circle fs-12 text-white question-item_count">3</span> 
                       For how many hours are you available next week?
                   </p>
-                  <div class="table-responsive">
+                  <div class="table-responsive mb-4">
                       <table class="table fs-14 text-center">
                           <thead class="">
                             <tr>
@@ -261,7 +261,26 @@
                           </tbody>
                         </table>
                   </div>
-                  
+                  <div class="row g-3">
+                    <div class="col-md-5">
+                      <input type="text" class="form-control fs-14" placeholder="Enter a value">
+                    </div>
+                    <div class="col-md-5">
+                      <select multiple 
+                      multiselect-search="true" 
+                      multiselect-select-all="true" 
+                      multiselect-max-items="1"
+                      multiselect-hide-x = "false" class="form-select">
+                        <option>Select item 1</option>
+                        <option>Select item 2</option>
+                        <option>Select item 3</option>
+                        <option>Select item 4</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <button class="btn btn-primary fs-14 w-100">Add New</button>
+                    </div>
+                  </div>
               </div>
 
                 <div class="text-center pt-4">
@@ -273,6 +292,7 @@
     </main>
     
     <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./vendor/multiselect/multiselect-dropdown.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
