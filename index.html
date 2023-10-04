@@ -135,7 +135,7 @@
                                 <th scope="col" class="text-danger">Over-utilised</th>
                                 <th scope="col">Appropriately utilized</th>
                                 <th scope="col">Under-utilised</th>
-                                <th width="270">Which projects are you working on?</th>
+                                <th width="370">Which projects are you working on?</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -217,12 +217,21 @@
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-fri"></td>
                                 <td><input class="form-check-input text-primary" type="radio" name="q2-fri"></td>
                                 <td>
-                                  <div class="d-flex flex-column gap-2">
-                                    <div class="d-flex gap-2 align-items-center">
-                                      <input type="text" class="form-control form-control-sm">
-                                      <button class="btn btn-light border border-secondary border-opacity-50 p-1 px-2 h-auto fs-14">
-                                        <i class="bi bi-plus-lg"></i>
-                                      </button>
+                                  <div class="row g-1">
+                                    <div class="col-6">
+                                      <input type="text" class="form-control fs-14" placeholder="Enter a value">
+                                    </div>
+                                    <div class="col-6">
+                                      <select multiple 
+                                      multiselect-search="true" 
+                                      multiselect-select-all="true" 
+                                      multiselect-max-items="1"
+                                      multiselect-hide-x = "false" class="form-select">
+                                        <option>Select item 1</option>
+                                        <option>Select item 2</option>
+                                        <option>Select item 3</option>
+                                        <option>Select item 4</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </td>
@@ -231,6 +240,9 @@
                           </table>
                     </div>
                     
+                    <div class="mt-2 text-end">
+                      <button class="btn btn-primary fs-14">Add New</button>
+                    </div>
                 </div>
 
                 <div class="question-item bg-white p-4 rounded-4 shadow-sm mb-4">
@@ -261,26 +273,9 @@
                           </tbody>
                         </table>
                   </div>
-                  <div class="row g-3">
-                    <div class="col-md-5">
-                      <input type="text" class="form-control fs-14" placeholder="Enter a value">
-                    </div>
-                    <div class="col-md-5">
-                      <select multiple 
-                      multiselect-search="true" 
-                      multiselect-select-all="true" 
-                      multiselect-max-items="1"
-                      multiselect-hide-x = "false" class="form-select">
-                        <option>Select item 1</option>
-                        <option>Select item 2</option>
-                        <option>Select item 3</option>
-                        <option>Select item 4</option>
-                      </select>
-                    </div>
-                    <div class="col-md-2">
-                      <button class="btn btn-primary fs-14 w-100">Add New</button>
-                    </div>
-                  </div>
+                  
+
+                  
               </div>
 
                 <div class="text-center pt-4">
